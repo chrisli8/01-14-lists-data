@@ -9,10 +9,10 @@ public class ThreadDemo {
 	//A function that counts up when run
 	public static class RunUp implements Runnable {
 		public void run() {
-			for(int i=0; i<10; i++) {				
+			for(int i=1; i<= 10; i++) {
 				System.out.println(i);
 				try {
-					Thread.sleep(50); //wait for 50ms
+					Thread.sleep(500); //wait for 50ms
 				} catch (InterruptedException e) {}
 			}
 		}
@@ -21,7 +21,7 @@ public class ThreadDemo {
 	//A function that counts down when run
 	public static class RunDown implements Runnable {
 		public void run() {
-			for(int i=0; i>-10; i--) {
+			for(int i=-1; i>= -100; i--) {
 				System.out.println(i);
 				try {
 					Thread.sleep(50); //wait for 50ms
